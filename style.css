@@ -1,7 +1,7 @@
-/* *{
+*{
     box-sizing: border-box;
  
-} */
+}
 header{
     float: justify; 
     text-align: center;  
@@ -34,6 +34,7 @@ footer{
     margin-right: 10%;
     border: 5px dashed blue;
     border-radius: 50px;
+    padding: 10px;
 }
 /* .col{
     padding: 20px;
@@ -70,7 +71,7 @@ footer{
     /* transition-timing-function: linear; */
     /* transition-delay: 2s;
     transform: translate(25px); */
-}
+/* } */
 .image{
     width: 15%;
     height:auto;
@@ -90,7 +91,8 @@ picture{
         background-position: center; 
         background-blend-mode: luminosity;
       } 
-      
+    
+    
     
     a{
        display:flex;  
@@ -114,4 +116,71 @@ picture{
     
 }
 
+ @keyframes change {
+    
+        from {background-color: blue;}
+        to {background-color: green;}
+}
+      
+
+.third{
+        
+        background-color: blue;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count:5;
+    
+}
+/* @keyframes slide {
+    from {transform: translateY(-900px);}
+    to {transform: translateY(10px);}
+    
+}
+.parent{
+    animation: slide 2s  ;
+    
+} */
+
+
+
+
+@keyframes slide {
+    
+        from {left: 0px;}
+        to {left: 500px;}
+      
+} 
+
+
+.parent{
+  position: relative;
+  animation:slide 5s;
+  animation-timing-function: ease-in;
   
+}
+
+ @keyframes text {
+    
+    from {font-weight: lighter;}
+    to {font-weight: bolder;}
+  
+}
+
+
+h1{
+
+animation-name: text;
+position: relative;
+animation:text 10s;
+animation-timing-function:ease-out;
+animation-duration: 5s
+};
+
+/* @keyframes text {
+    from { font-weight: lighter;}
+    to {font-weight: bolder;}
+}
+h1{
+    animation-name: text 20s ;
+    animation-delay: 3s;
+} */
